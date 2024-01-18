@@ -1,0 +1,4 @@
+# big module for project only and to be ignored...
+node_modules
+# sensitive info...env
+.env 
