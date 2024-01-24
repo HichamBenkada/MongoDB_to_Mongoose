@@ -1,6 +1,6 @@
 import express from 'express';
-import {ObjectId} from 'mongodb'
-import db from '../db/conn.mjs'
+import {ObjectId} from 'mongodb';
+import db from '../db/conn.mjs';
 const router = express.Router();
 
 //grades baseURL
@@ -66,12 +66,7 @@ if(!result) res.send("Not Found").status(404);
 else res.send(result).status(200); 
 })
 
-//Update a score 
-router.patch('/:id/add', async (req,res)=>{
-
-let collection = await db.collection.
-
-});
+//    ;
 
 //delete single entry
 router.delete('/:id', async (req,res)=>{
