@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5050;
 app.use(express.json());
 
 import grades from './routes/grades.mjs'
-//BaseURL Hostdomain/grades
+//redirect to grades route
 app.use('/grades', grades)
 
 
