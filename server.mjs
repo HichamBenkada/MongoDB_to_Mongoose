@@ -10,7 +10,6 @@ mongoose.connection.on("error", console.error.bind(console, "MongoDB connection 
 mongoose.connection.once("open", () => {
   console.log("Connected to Gradesdb");
 });
-mongoose.connect(process.env.ATLAS_URI);
 
 //parsing middleware
 app.use(express.json());
